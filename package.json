@@ -1,6 +1,9 @@
 {
-  "name": "rescript-project-template",
+  "name": "@line100/rescript-nom",
   "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "rescript",
     "clean": "rescript clean -with-deps",
@@ -8,12 +11,15 @@
     "test": "rescript build && retest"
   },
   "keywords": [
-    "rescript"
+    "rescript",
+    "nom",
+    "parser",
+    "combinator"
   ],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@line100/rescript-seq": "0.0.4",
+    "@line100/rescript-seq": "^0.0.4",
     "rescript": "*"
   },
   "devDependencies": {
