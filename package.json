@@ -4,7 +4,8 @@
   "scripts": {
     "build": "rescript",
     "clean": "rescript clean -with-deps",
-    "start": "rescript build -w"
+    "start": "rescript build -w",
+    "test": "rescript build && retest"
   },
   "keywords": [
     "rescript"
@@ -12,6 +13,10 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@line100/rescript-seq": "0.0.4",
     "rescript": "*"
+  },
+  "devDependencies": {
+    "rescript-test": "^3.4.1"
   }
 }

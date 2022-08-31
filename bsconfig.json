@@ -1,18 +1,28 @@
 {
   "name": "rescript-project-template",
   "version": "0.0.1",
-  "sources": {
-    "dir" : "src",
-    "subdirs" : true
-  },
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    },
+    {
+      "dir": "test",
+      "type": "dev"
+    }
+  ],
   "package-specs": {
     "module": "commonjs",
     "in-source": true
   },
   "suffix": ".bs.js",
   "bs-dependencies": [
+    "@line100/rescript-seq"
+  ],
+  "bs-dev-dependencies": [
+    "rescript-test"
   ],
   "warnings": {
-    "error" : "+101"
-  },
+    "error": "+101"
+  }
 }
